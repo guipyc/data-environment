@@ -4,7 +4,12 @@ import os
 
 def start():
     """returns the right message"""
-    pass  # YOUR CODE HERE
+
+    return f'Starting in {os.getenv("FLASK_ENV", default="empty")} mode...'
+
+
+
+
 
 if __name__ == "__main__":
     print(start())
